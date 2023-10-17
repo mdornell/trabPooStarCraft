@@ -1,5 +1,5 @@
 package control;
-import java.lang.Math.*;
+import java.lang.Math;
 import java.util.LinkedList;
 
 import characters.abstracts.Guerreiro;
