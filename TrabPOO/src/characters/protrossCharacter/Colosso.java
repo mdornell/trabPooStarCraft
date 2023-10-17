@@ -15,7 +15,7 @@ public class Colosso extends Protoss{
         this.initialLife = 100;
     }
 
-    // @Override
+    @Override
     public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
         int dano = 20;
         for (Guerreiro Individuo : lado2){

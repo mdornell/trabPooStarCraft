@@ -13,7 +13,7 @@ public class Zergnideo extends Zergs{
         this.setEnergia(50);
     }
 
-    // @Override
+    @Override
     public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
         int dano = 5;
         lado1.get(0).sofrerDano(dano);

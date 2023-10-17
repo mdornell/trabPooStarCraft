@@ -13,7 +13,7 @@ public class Empalador extends Nagas{
         this.setEnergia(400);
     }
 
-    // @Override
+    @Override
     public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
         int dano = 50;
         lado1.get(0).sofrerDano(dano);

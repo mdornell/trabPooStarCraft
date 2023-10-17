@@ -13,7 +13,7 @@ public class TatuBomba extends Zergs{
     }
 
 
-    // @Override
+    @Override
     public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
         int dano = 100;
         lado1.get(0).sofrerDano(dano);

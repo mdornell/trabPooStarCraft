@@ -13,7 +13,7 @@ public class Ambunave extends Terrans{
         super(nome, idade, peso, type);
     }
 
-    // @Override
+    @Override
     public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
         int remedio = 50;
         for (Guerreiro Individuo : lado1){

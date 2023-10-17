@@ -14,7 +14,7 @@ public class Servo extends Nagas {
     }
 
 
-    // @Override
+    @Override
     public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
         invenenar(lado1.get(0), lado2);
     }

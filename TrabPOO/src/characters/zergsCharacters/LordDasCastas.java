@@ -15,7 +15,7 @@ public class LordDasCastas extends Zergs{
         this.setEnergia(200);
     }
 
-    // @Override
+    @Override
     public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
         Random random = new Random();
         int type = random.nextInt(2);

@@ -13,7 +13,7 @@ public class Devoradora extends Nagas{
         super(nome, idade,peso, type);
     }
     
-    // @Override
+    @Override
     public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
         int dano = 0;
         if(lado2.get(1) instanceof Empalador){
