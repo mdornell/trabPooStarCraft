@@ -20,7 +20,7 @@ public class ManipulaArquivo {
     
     public void salvarLado1(Guerreiro soldado, LinkedList<Guerreiro> lado1){
         try{
-            FileInputStream arq = new FileInputStream("Lado1.txt");
+            FileInputStream arq = new FileInputStream("..\\Lado1.txt");
             try (Scanner scan = new Scanner(arq)){
                 while (scan.hasNext()){
                     int tipo = scan.nextInt();
@@ -60,7 +60,7 @@ public class ManipulaArquivo {
     
     public void salvarLado2(Guerreiro soldado, LinkedList<Guerreiro> lado2){
         try{
-            FileInputStream arq = new FileInputStream("Lado2.txt");
+            FileInputStream arq = new FileInputStream("..\\Lado2.txt");
             try (Scanner scan = new Scanner(arq)){
                 while (scan.hasNext()){
                     int tipo = scan.nextInt();
