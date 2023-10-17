@@ -12,9 +12,6 @@ import characters.nature.*;
 import characters.zergsCharacters.*;
 import characters.protrossCharacter.*;
 
-
-
-
 public class FileManipulation {
     
     public void lerDados1(Guerreiro champion, LinkedList<Guerreiro> lado1){
