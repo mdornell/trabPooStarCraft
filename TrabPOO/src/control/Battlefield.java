@@ -2,12 +2,12 @@ package control;
 import java.lang.Math.*;
 import java.util.LinkedList;
 
-// import characters.abstracts.Guerreiro;
+import characters.abstracts.Guerreiro;
 
 public class Battlefield {
 
     public int numAleatorio(){
-        int num = (int)((Math.Random()*50)+1);
+        int num = (int)((Math.random()*50)+1);
         
         return num;
     }
@@ -27,18 +27,20 @@ public class Battlefield {
     private int atacarPrimeiro(int num, Guerreiro primeiroAtacar, Guerreiro segundoAtacar, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
         if(num < 25){
         // Se o número gerado for menor, o guerreiro da fila é o primeiro a atacar
-
+            
         }else{
         //Se não, o guerreiro da segunda fila é o primeiro a atacar
-        }       
+        }   
+        
+        return 0;
     }
 
 //    public void moverFinalDaFila(){
      
 //     }
-    public void atacarFila(){
-        if(primeiroAtacar.getEnergia() > 0){
-            primeiroAtacar.atacar(segundoAtacar, lado1, lado2)
-        }
-    }
+    // public void atacarFila(){
+    //     if(primeiroAtacar.getEnergia() > 0){
+    //         primeiroAtacar.atacar(segundoAtacar, lado1, lado2)
+    //     }
+    // }
 }

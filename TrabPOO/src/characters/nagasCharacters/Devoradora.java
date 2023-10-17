@@ -5,7 +5,6 @@ import java.util.LinkedList;
 import characters.abstracts.Guerreiro;
 import characters.abstracts.Nagas;
 import characters.nature.Natureza;
-import characters.nature.Organic;
 
 public class Devoradora extends Nagas{
 
@@ -15,20 +14,7 @@ public class Devoradora extends Nagas{
     
     @Override
     public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
-        int dano = 0;
-        if(lado2.get(1) instanceof Empalador){
-            for(int i = 4;i < 4; i++){
-                Guerreiro novoNaga = new Servo(getNome(), getIdade(), getPeso(),new Organic());
-                lado2.add(1,novoNaga);
-            }
-            lado2.remove(0);
-        }else{
-            dano = lado2.get(1).getEnergia();
-            lado2.remove(1);
-        }
-        
-
-        lado1.get(0).sofrerDano(dano*2);
+        champion.atacar(this, lado1, lado2);
     }   
 
 }
