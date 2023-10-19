@@ -48,7 +48,7 @@ public class Battlefield {
     private boolean atacarCadaUm(Guerreiro guerreiroAtacante, Guerreiro guerreiroSofredor, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
         boolean codigo = true;
         if(guerreiroAtacante.getEnergia() > 0){
-            // codigo = guerreiroAtacante.atacar(guerreiroSofredor,lado1,lado2);
+            // codigo = guerreiroAtacante.atacar(guerreiroSofredor,lado1,lado2);""
         }
         return codigo;
     }
