@@ -15,7 +15,11 @@ public class Devoradora extends Nagas{
     @Override
     public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
         champion.atacar(this, lado1, lado2);
-    }   
+    } 
+    
+    public void verificaSeMorreu(Guerreiro guerreiro, LinkedList<Guerreiro> fila){
+        
+    }
 
 }
 
