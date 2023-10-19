@@ -24,7 +24,9 @@ public class Tormento extends Protoss{
             recuperaçãoGelada(champion);
         }
 
-        creatingClone(lado1);
+        // if(fistAtack){
+            creatingClone(lado1);
+        // }
     }
 
     private void creatingClone(LinkedList<Guerreiro> lista){
