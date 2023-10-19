@@ -6,14 +6,14 @@ import characters.abstracts.Guerreiro;
 
 public class Battlefield1 {
     
-    public void jogo(LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
+    public void battle(LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
         if(!lado1.isEmpty() && !lado2.isEmpty()){
             int aleatorio = (int)((Math.random() * 50) + 1);
             
             Guerreiro guerreiro1 = lado1.get(0);
             Guerreiro guerreiro2 = lado2.get(0);
             
-            verQuemAtacaPrimeiro(aleatorio,guerreiro1,guerreiro2,lado1,lado2);
+            seeWhiFistAtack(aleatorio, guerreiro1, guerreiro2, lado1, lado2);
             
             moverGuerreiroDaFilaEVerificar(guerreiro1,lado1);
             moverGuerreiroDaFilaEVerificar(guerreiro2,lado2);          
@@ -21,7 +21,7 @@ public class Battlefield1 {
         //verificarVencedor(lado1,lado2);
     }    
 
-    private void verQuemAtacaPrimeiro(int ordemDeAtaque, Guerreiro guerreiro1, Guerreiro guerreiro2, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
+    private void seeWhiFistAtack(int ordemDeAtaque, Guerreiro guerreiro1, Guerreiro guerreiro2, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
         boolean permissao;
         if(ordemDeAtaque < 25){
             permissao = atacarCadaUm(guerreiro1,guerreiro2,lado1,lado2);
@@ -37,7 +37,8 @@ public class Battlefield1 {
     private boolean atacarCadaUm(Guerreiro guerreiroAtacante, Guerreiro guerreiroSofredor, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
         boolean codigo = true;
         if(guerreiroAtacante.getEnergia() > 0){
-            // codigo = guerreiroAtacante.atacar(guerreiroSofredor,lado1,lado2);
+            // codigo = 
+            guerreiroAtacante.atacar(guerreiroSofredor, lado1, lado2);
         }
         return codigo;
     }
@@ -46,7 +47,10 @@ public class Battlefield1 {
         fila.remove(guerreiro);
         if(guerreiro.getEnergia() > 0){
             fila.add(guerreiro);
+            
         }
+
+        fila.addLast(fila.get(0));
 //        if(fila.isEmpty()){
 //            System.out.println("ULTIMO GUERREIO MORTO: DADOS");
 //            System.out.println();
