@@ -27,11 +27,9 @@ public class Battlefield {
     private int atacarPrimeiro(int num, Guerreiro primeiroAtacar, Guerreiro segundoAtacar, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
         if(num < 25){
         // Se o número gerado for menor, o guerreiro da fila é o primeiro a atacar
-            
         }else{
         //Se não, o guerreiro da segunda fila é o primeiro a atacar
         }   
-        
         return 0;
     }
 
