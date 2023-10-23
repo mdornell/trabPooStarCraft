@@ -16,7 +16,7 @@ public class CruzadorDeBatalha extends Terrans{
     }
 
     @Override
-    public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
+    public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2, boolean order){
         int dano = 50;
         if(ataqueFinal == 3){
             int life = lado2.get(0).getEnergia();

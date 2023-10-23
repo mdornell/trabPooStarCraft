@@ -16,7 +16,7 @@ public class LordDasCastas extends Zergs{
     }
 
     @Override
-    public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
+    public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2, boolean order){
         Random random = new Random();
         int type = random.nextInt(2);
         createZerg(type, lado2);

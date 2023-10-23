@@ -13,7 +13,7 @@ public class Infestador extends Zergs{
     }
 
     @Override
-    public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
+    public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2, boolean order){
         //Fazer o primeiro a atacar
 
         //Segundo a atacar

@@ -14,7 +14,7 @@ public class Zergnideo extends Zergs{
     }
 
     @Override
-    public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
+    public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2, boolean order){
         int dano = 5;
         lado1.get(0).sofrerDano(dano);
     }

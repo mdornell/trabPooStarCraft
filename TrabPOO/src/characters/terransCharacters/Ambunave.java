@@ -14,7 +14,7 @@ public class Ambunave extends Terrans{
     }
 
     @Override
-    public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
+    public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2, boolean order){
         int remedio = 50;
         for (Guerreiro Individuo : lado1){
             if(champion.getType() instanceof Organic){

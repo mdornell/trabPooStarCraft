@@ -22,7 +22,7 @@ public class Soldado extends Terrans {
     }
 
     // @Override
-    public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
+    public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2, boolean order){
         int dano = 20;
         lado2.get(0).sofrerDano(dano);
     }

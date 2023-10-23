@@ -18,7 +18,7 @@ public class Transpotadora extends Protoss {
     }
 
     @Override
-    public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
+    public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2, boolean order){
         int dano = 25;
         if(intecepitadores < 8){
             intecepitadores++;
