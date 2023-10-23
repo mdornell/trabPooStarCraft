@@ -12,8 +12,10 @@ public class Battlefield {
         return num;
     }
 
-    public void batalha(LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2, int num){
+    public void batalha(LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
         if(!lado1.isEmpty() && !lado2.isEmpty()){
+
+            int num = numAleatorio();
 
             Guerreiro guerreiro1 = lado1.get(0);
             Guerreiro guerreiro2 = lado2.get(0);
@@ -27,6 +29,7 @@ public class Battlefield {
     private int atacarPrimeiro(int num, Guerreiro primeiroAtacar, Guerreiro segundoAtacar, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
         if(num < 25){
         // Se o número gerado for menor, o guerreiro da fila é o primeiro a atacar
+            
         }else{
         //Se não, o guerreiro da segunda fila é o primeiro a atacar
         }   
