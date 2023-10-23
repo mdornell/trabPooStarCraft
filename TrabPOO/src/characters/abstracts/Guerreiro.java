@@ -1,6 +1,5 @@
 package characters.abstracts;
 
-import characters.nagasCharacters.Devoradora;
 import java.util.LinkedList;
 
 import characters.nature.Natureza;
