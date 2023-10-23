@@ -49,8 +49,6 @@ public class BattlefieldMarco {
             fila.add(guerreiro);
             
         }
-
-        fila.addLast(fila.get(0));
 //        if(fila.isEmpty()){
 //            System.out.println("ULTIMO GUERREIO MORTO: DADOS");
 //            System.out.println();
