@@ -4,7 +4,7 @@ import java.util.LinkedList;
 
 import characters.abstracts.Guerreiro;
 
-public class Battlefield1 {
+public class BattlefieldMarco {
     
     public void battle(LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
         if(!lado1.isEmpty() && !lado2.isEmpty()){
@@ -24,21 +24,21 @@ public class Battlefield1 {
     private void seeWhiFistAtack(int ordemDeAtaque, Guerreiro guerreiro1, Guerreiro guerreiro2, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
         boolean permissao;
         if(ordemDeAtaque < 25){
-            permissao = atacarCadaUm(guerreiro1,guerreiro2,lado1,lado2);
+            permissao = atacarCadaUm(guerreiro1,guerreiro2,lado1,lado2,true);
             if(permissao){
-                atacarCadaUm(guerreiro2,guerreiro1,lado1,lado2);
+                atacarCadaUm(guerreiro2,guerreiro1,lado1,lado2,false);
             }
         }else{
-            atacarCadaUm(guerreiro2,guerreiro1,lado1,lado2);
-            atacarCadaUm(guerreiro1,guerreiro2,lado1,lado2);
+            atacarCadaUm(guerreiro2,guerreiro1,lado1,lado2,true);
+            atacarCadaUm(guerreiro1,guerreiro2,lado1,lado2,false);
         }
     }
     
-    private boolean atacarCadaUm(Guerreiro guerreiroAtacante, Guerreiro guerreiroSofredor, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
+    private boolean atacarCadaUm(Guerreiro guerreiroAtacante, Guerreiro guerreiroSofredor, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2, boolean order){
         boolean codigo = true;
         if(guerreiroAtacante.getEnergia() > 0){
             // codigo = 
-            guerreiroAtacante.atacar(guerreiroSofredor, lado1, lado2);
+            guerreiroAtacante.atacar(guerreiroSofredor, lado1, lado2,order);
         }
         return codigo;
     }
@@ -81,42 +81,42 @@ public class Battlefield1 {
         }
     }
     
-    public int[] somarPeso(LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
-        int somas[] = new int[2];
-        double peso;
-        float soma = 0,soma2 = 0;
-        int i = lado1.size();
-        int i2 = lado2.size();
-        for(int cont = 0; cont < i; cont++){
-            peso = lado1.get(cont).getPeso();
-            soma += peso;
+    public double[] somarPeso(LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
+        double somas[] = new double[2];
+        double soma1 = 0,soma2 = 0;
+        
+        for(Guerreiro g : lado1){
+            soma1 += g.getPeso();
         }
-        somas[0] = (int)soma;
-        for(int cont = 0; cont < i2; cont++){
-            peso = lado2.get(cont).getPeso();
-            soma2 += peso;
+        somas[0] = soma1;
+        for(Guerreiro g2 : lado2){
+            soma2 += g2.getPeso();
         }
-        somas[1] = (int)soma2;
+        somas[1] = soma2;
         return somas;
     }
     
-    public int maisVelho(LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
-        int i = lado1.size();
-        int i2 = lado2.size();
-        int y,maiorIdade = -1;
-        for(int x = 0; x < i; x++){
-            y = lado1.get(x).getIdade();
-            if(y > maiorIdade){
-                maiorIdade = y;
-            }
-        } 
-        for(int x = 0; x < i2; x++){
-            y = lado2.get(x).getIdade();
-            if(y > maiorIdade){
-                maiorIdade = y;
+    public Guerreiro maisVelho(LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2) {
+        Guerreiro GuerreiroMaisVelho = null; // Inicialize como nulo
+        int maiorIdade = -1;
+    
+        for (Guerreiro g : lado1) {
+            int idade = g.getIdade();
+            if (idade > maiorIdade) {
+                maiorIdade = idade;
+                GuerreiroMaisVelho = g;
             }
         }
-        return maiorIdade;
+    
+        for (Guerreiro g : lado2) {
+            int idade = g.getIdade();
+            if (idade > maiorIdade) {
+                maiorIdade = idade;
+                GuerreiroMaisVelho = g;
+            }
+        }
+    
+        return GuerreiroMaisVelho;
     }
     
     private void verificarLista(LinkedList<Guerreiro> fila){
