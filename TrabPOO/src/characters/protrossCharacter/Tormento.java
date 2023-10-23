@@ -24,12 +24,15 @@ public class Tormento extends Protoss{
             recuperaçãoGelada(champion);
         }
 
-        // if(fistAtack){
-            creatingClone(lado1);
-        // }
+        if(order){
+            creatingClone(champion,lado1);
+        }
     }
 
-    private void creatingClone(LinkedList<Guerreiro> lista){
+    private void creatingClone(Guerreiro champion,LinkedList<Guerreiro> lista){
+        lista.remove(champion);
+        lista.addLast(champion);
+
         Guerreiro clone = new Tormento(getNome(), getIdade(), getPeso(),new Machanic());
         this.setEnergia(50);
         this.initialLife = 50;
