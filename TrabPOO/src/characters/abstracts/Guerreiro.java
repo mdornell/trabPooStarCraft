@@ -1,5 +1,6 @@
 package characters.abstracts;
 
+import characters.nagasCharacters.Devoradora;
 import java.util.LinkedList;
 
 import characters.nature.Natureza;
@@ -71,6 +72,6 @@ public abstract class Guerreiro {
     }
 
     // public abstract void verificaSeMorreu(Guerreiro guerreiro, LinkedList<Guerreiro> fila);;
-    public abstract void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2);  
+    public abstract void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2, boolean order);  
     
 }
