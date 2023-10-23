@@ -20,7 +20,7 @@ public class Battlefield {
 
             atacarPrimeiro(num, guerreiro1, guerreiro2, lado1, lado2);
             //atacarFila(){}
-            //moverFinalDaFila(){}szerxdtcfyvgbhinjmlk
+            //moverFinalDaFila(){}
         }
     }
 
