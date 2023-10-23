@@ -14,10 +14,13 @@ public class Infestador extends Zergs{
 
     @Override
     public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2, boolean order){
-        //Fazer o primeiro a atacar
 
-        //Segundo a atacar
-        createZerg(lado2);
+        if(order){
+            Guerreiro controlado = lado2.get(0);
+            controlado.atacar(controlado, lado2, lado1, false);
+        }else{
+            createZerg(lado2);
+        }
     }
 
     private void createZerg(LinkedList<Guerreiro> lista){
