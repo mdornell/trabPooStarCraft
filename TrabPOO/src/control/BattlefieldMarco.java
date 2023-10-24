@@ -3,6 +3,7 @@ package control;
 import java.util.LinkedList;
 
 import characters.abstracts.Guerreiro;
+import characters.nagasCharacters.Devoradora;
 
 public class BattlefieldMarco {
 
@@ -55,7 +56,6 @@ public class BattlefieldMarco {
     private boolean atacarCadaUm(Guerreiro guerreiroAtacante, Guerreiro guerreiroSofredor, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2, boolean order){
         boolean codigo = true;
         if(guerreiroAtacante.getEnergia() > 0){
-            // codigo = 
             guerreiroAtacante.atacar(guerreiroSofredor, lado1, lado2,order);
         }
         return codigo;
