@@ -44,10 +44,10 @@ public class BattlefieldMarco {
         if(ordemDeAtaque < 25){
             // Se o número gerado for menor que 25, o guerreiro da primeira fila (guerreiro1) ataca primeiro
             atacarCadaUm(guerreiro1, guerreiro2, lado1, lado2, true);
-            atacarCadaUm(guerreiro1, guerreiro2, lado1, lado2, false);
+            atacarCadaUm(guerreiro2, guerreiro1, lado1, lado2, false);
         }else{
             // Se o número gerado for maior ou igual a 25, o guerreiro da segunda fila (guerreiro2) ataca primeiro
-            atacarCadaUm(guerreiro1, guerreiro2, lado1, lado2, true);
+            atacarCadaUm(guerreiro2, guerreiro1, lado1, lado2, true);
             atacarCadaUm(guerreiro1, guerreiro2, lado1, lado2, false);
         }   
     }

@@ -17,15 +17,17 @@ public class Tormento extends Protoss{
 
     @Override
     public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2, boolean order){
+
+        Guerreiro atacante = lado1.get(0);
         int dano = 20;
         lado2.get(0).sofrerDano(dano);
 
         if(getEnergia() < (initialLife/2)){
-            recuperaçãoGelada(champion);
+            recuperaçãoGelada(atacante);
         }
 
         if(order){
-            creatingClone(champion,lado1);
+            creatingClone(atacante,lado1);
         }
     }
 
