@@ -15,11 +15,15 @@ public class Main {
 
         fileMain.lerDados1(champion, LadoTerransProttoss);
         fileMain.lerDados2(champion, LadoZergsNagas); 
+
+        BattlefieldMarco batalha = new BattlefieldMarco();
+        batalha.battle(LadoTerransProttoss, LadoZergsNagas);
         
-        System.out.println("Lado: Terrans e Protoss");
-        imprimirDados(LadoTerransProttoss);
-        System.out.println("\n\nLado: Zergs e Nagas");
-        imprimirDados(LadoZergsNagas);
+        
+        // System.out.println("Lado: Terrans e Protoss");
+        // imprimirDados(LadoTerransProttoss);
+        // System.out.println("\n\nLado: Zergs e Nagas");
+        // imprimirDados(LadoZergsNagas);
     }
     
     public static void imprimirDados(LinkedList<Guerreiro>Lado){
