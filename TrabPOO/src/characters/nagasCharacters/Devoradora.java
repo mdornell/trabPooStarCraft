@@ -14,28 +14,26 @@ public class Devoradora extends Nagas{
     
     @Override
     public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2, boolean order){
-        Guerreiro alimento = lado2.get(1);
         int dano;
-
-        if(alimento instanceof Empalador){
-            lado2.remove(champion);
-            verificaSeMorreu(alimento, lado2);
+        if ((lado2.size()) > 1) {
+            Guerreiro alimento = lado2.get(1);
+            if (alimento instanceof Empalador) {
+                lado2.remove(champion);
+                criaServos(lado2);
+            } else {
+                dano = alimento.getEnergia() * 2;
+                lado2.remove(alimento);
+                lado1.get(0).sofrerDano(dano);
+            }
         }else{
-            dano = alimento.getEnergia() * 2;
-            lado2.remove(alimento);
+            return;
         }
-        
-        
-
-        
-
-
-
     } 
     
-    public void verificaSeMorreu(Guerreiro guerreiro, LinkedList<Guerreiro> fila){
-
-        
+    public void criaServos(LinkedList<Guerreiro> fila){
+        for(int i = 0; i < 4; i ++){
+            fila.add(new Servo(getNome(), getIdade(), getPeso(), getType()));
+        }
     }
 
     @Override
