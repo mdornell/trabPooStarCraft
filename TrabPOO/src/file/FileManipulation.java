@@ -16,7 +16,7 @@ public class FileManipulation {
     
     public void lerDados1(Guerreiro champion, LinkedList<Guerreiro> lado1){
         try{
-            FileInputStream arquivo = new FileInputStream("arquivos/LadoTerransProtoss.txt");
+            FileInputStream arquivo = new FileInputStream("LadoTerransProtoss1.txt");
             try(Scanner scan = new Scanner(arquivo)){
                 while(scan.hasNext()){
                     int tipo = scan.nextInt();
@@ -53,7 +53,7 @@ public class FileManipulation {
 
     public void lerDados2(Guerreiro champion, LinkedList<Guerreiro> lado2){
         try{
-            FileInputStream arquivo = new FileInputStream("arquivos/LadoZergsNagas.txt");
+            FileInputStream arquivo = new FileInputStream("LadoZergsNagas1.txt");
             try(Scanner scan = new Scanner(arquivo)){
                 while(scan.hasNext()){
                     int tipo = scan.nextInt();
