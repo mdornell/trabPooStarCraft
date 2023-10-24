@@ -35,7 +35,7 @@ public class FileManipulation {
                     }else if(tipo == 5){
                         champion = new Fanaticus(nome,idade,peso,new Organic());
                     }else if(tipo == 6){
-                        champion = new Tormento(nome,idade,peso,new Organic());
+                        champion = new Tormento(nome,idade,peso,new Organic(),0);
                     }else if(tipo == 7){
                         champion = new Colosso(nome,idade,peso,new Machanic());
                     }else if(tipo == 8){

@@ -9,10 +9,12 @@ import characters.nature.*;
 public class Tormento extends Protoss{
 
     private int initialLife;
+    private int clone;
 
-    public Tormento(String nome, int idade, double peso, Natureza type) {
+    public Tormento(String nome, int idade, double peso, Natureza type,int clone) {
         super(nome, idade, peso, type);
         this.initialLife = 100;
+        this.clone = clone;
     }
 
     @Override
@@ -26,7 +28,7 @@ public class Tormento extends Protoss{
             recuperaçãoGelada(atacante);
         }
 
-        if(order){
+        if(order && clone == 0){
             creatingClone(atacante,lado1);
         }
     }
@@ -35,7 +37,7 @@ public class Tormento extends Protoss{
         lista.remove(champion);
         lista.addLast(champion);
 
-        Guerreiro clone = new Tormento(getNome(), getIdade(), getPeso(),new Machanic());
+        Guerreiro clone = new Tormento(getNome(), getIdade(), getPeso(),new Machanic(),1);
         this.setEnergia(50);
         this.initialLife = 50;
         lista.addFirst(clone);
