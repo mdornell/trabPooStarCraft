@@ -3,7 +3,6 @@ package control;
 import java.util.LinkedList;
 
 import characters.abstracts.Guerreiro;
-import characters.nagasCharacters.Devoradora;
 
 public class BattlefieldMarco {
 
