@@ -38,16 +38,27 @@ public class BattlefieldMarco {
     }    
 
     private void verQuemAtacaPrimeiro(int ordemDeAtaque, Guerreiro guerreiro1, Guerreiro guerreiro2, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
-        boolean permissao;
+        // boolean permissao;
+        // if(ordemDeAtaque < 25){
+        //     permissao = atacarCadaUm(guerreiro1,guerreiro2,lado1,lado2,true);
+        //     if(permissao){
+        //         atacarCadaUm(guerreiro2,guerreiro1,lado1,lado2,false);
+        //     }
+        // }else{
+        //     atacarCadaUm(guerreiro2,guerreiro1,lado1,lado2,true);
+        //     atacarCadaUm(guerreiro1,guerreiro2,lado1,lado2,false);
+        // }
+
+        // Verifica se o número aleatório gerado (num) é menor que 25
         if(ordemDeAtaque < 25){
-            permissao = atacarCadaUm(guerreiro1,guerreiro2,lado1,lado2,true);
-            if(permissao){
-                atacarCadaUm(guerreiro2,guerreiro1,lado1,lado2,false);
-            }
+            // Se o número gerado for menor que 25, o guerreiro da primeira fila (guerreiro1) ataca primeiro
+            atacarCadaUm(guerreiro1, guerreiro2, lado1, lado2, true);
+            atacarCadaUm(guerreiro1, guerreiro2, lado1, lado2, false);
         }else{
-            atacarCadaUm(guerreiro2,guerreiro1,lado1,lado2,true);
-            atacarCadaUm(guerreiro1,guerreiro2,lado1,lado2,false);
-        }
+            // Se o número gerado for maior ou igual a 25, o guerreiro da segunda fila (guerreiro2) ataca primeiro
+            atacarCadaUm(guerreiro1, guerreiro2, lado1, lado2, true);
+            atacarCadaUm(guerreiro1, guerreiro2, lado1, lado2, false);
+        }   
     }
     
     private boolean atacarCadaUm(Guerreiro guerreiroAtacante, Guerreiro guerreiroSofredor, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2, boolean order){
