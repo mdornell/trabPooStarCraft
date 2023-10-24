@@ -7,14 +7,14 @@ import file.FileManipulation;
 
 public class Main {
     public static void main(String[] args) {
-        Guerreiro campion = null;
+        Guerreiro champion = null;
         FileManipulation fileMain = new FileManipulation();
 
         LinkedList<Guerreiro> LadoTerransProttoss = new LinkedList<Guerreiro>();
         LinkedList<Guerreiro> LadoZergsNagas = new LinkedList<Guerreiro>();
 
-        fileMain.lerDados1(campion, LadoTerransProttoss);
-        fileMain.lerDados2(campion, LadoZergsNagas); 
+        fileMain.lerDados1(champion, LadoTerransProttoss);
+        fileMain.lerDados2(champion, LadoZergsNagas); 
         
         System.out.println("Lado: Terrans e Protoss");
         imprimirDados(LadoTerransProttoss);
@@ -23,13 +23,12 @@ public class Main {
     }
     
     public static void imprimirDados(LinkedList<Guerreiro>Lado){
-        for (Guerreiro campion : Lado) {
-            // System.out.println("Tipo: " + );
-            campion.regenerat(415);
-            System.out.println("Nome: " + campion.getNome());
-            System.out.println("Idade: " + campion.getIdade());
-            System.out.println("Peso :" + campion.getPeso());
-            System.out.println("Energia : " + campion.getEnergia());
+        for (Guerreiro champion : Lado) {
+            System.out.println("Tipo: " + champion.toString() );
+            System.out.println("Nome: " + champion.getNome());
+            System.out.println("Idade: " + champion.getIdade());
+            System.out.println("Peso :" + champion.getPeso());
+            System.out.println("Energia : " + champion.getEnergia());
             System.out.println("=======================================");
         }  
     }
