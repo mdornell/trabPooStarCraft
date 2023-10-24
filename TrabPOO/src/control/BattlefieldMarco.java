@@ -13,7 +13,7 @@ public class BattlefieldMarco {
             Guerreiro guerreiro1 = lado1.get(0);
             Guerreiro guerreiro2 = lado2.get(0);
             
-            seeWhiFistAtack(aleatorio, guerreiro1, guerreiro2, lado1, lado2);
+            verQuemAtacaPrimeiro(aleatorio, guerreiro1, guerreiro2, lado1, lado2);
             
             moverGuerreiroDaFilaEVerificar(guerreiro1,lado1);
             moverGuerreiroDaFilaEVerificar(guerreiro2,lado2);          
@@ -21,7 +21,7 @@ public class BattlefieldMarco {
         //verificarVencedor(lado1,lado2);
     }    
 
-    private void seeWhiFistAtack(int ordemDeAtaque, Guerreiro guerreiro1, Guerreiro guerreiro2, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
+    private void verQuemAtacaPrimeiro(int ordemDeAtaque, Guerreiro guerreiro1, Guerreiro guerreiro2, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
         boolean permissao;
         if(ordemDeAtaque < 25){
             permissao = atacarCadaUm(guerreiro1,guerreiro2,lado1,lado2,true);
