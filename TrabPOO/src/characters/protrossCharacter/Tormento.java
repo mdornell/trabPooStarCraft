@@ -38,6 +38,11 @@ public class Tormento extends Protoss{
         this.initialLife = 50;
         lista.addFirst(clone);
     }
+
+    @Override
+    public String toString() {
+        return "Tormento";
+    }
     
 }
 

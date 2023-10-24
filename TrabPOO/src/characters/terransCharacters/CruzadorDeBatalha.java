@@ -27,6 +27,11 @@ public class CruzadorDeBatalha extends Terrans{
             this.ataqueFinal += 1;
         }
     }   
+
+    @Override
+    public String toString() {
+        return "Cruzador de Batalha";
+    }
 }
 
 /*

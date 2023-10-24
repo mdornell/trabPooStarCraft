@@ -26,6 +26,11 @@ public class Colosso extends Protoss{
             recuperaçãoGelada(champion);
         }
     }
+
+    @Override
+    public String toString() {
+        return "Colosso";
+    }
 }
 
 /*

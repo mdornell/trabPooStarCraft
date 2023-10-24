@@ -5,9 +5,25 @@ import java.util.LinkedList;
 import characters.abstracts.Guerreiro;
 
 public class BattlefieldMarco {
+
+    public void infos(LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
+        // a) (5 pontos) Determine a soma dos pesos dos lados (isso deve ser feito antes das batalhas):
+        double pesos[] = somarPeso(lado1, lado2);
+        System.out.println("Pesos das tropas :");
+        System.out.println("Terrans e Protoss pesam : "+ pesos[0] +" unidades");
+        System.out.println("Zergs e Nagas pesam : "+ pesos[1] +" unidades");
+
+        //b) (5 pontos) A maior idade dentre todos os guerreiros (de ambos lados) (isso deve ser feito antes das batalhas):
+        Guerreiro maiorIdade = maisVelho(lado1, lado2);
+        System.out.println("\nO Guerreiro mais velho é :");
+        System.out.println("Nome : " + maiorIdade.getNome());
+        System.out.println("Idade : " + maiorIdade.getIdade());
+        System.out.println("Classe : " + maiorIdade.toString()) ;
+
+    }
     
     public void battle(LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
-        if(!lado1.isEmpty() && !lado2.isEmpty()){
+        while(!lado1.isEmpty() && !lado2.isEmpty()){
             int aleatorio = (int)((Math.random() * 50) + 1);
             
             Guerreiro guerreiro1 = lado1.get(0);

@@ -28,6 +28,11 @@ public class Infestador extends Zergs{
         lista.add(1, novoZerg);
 
     }
+
+    @Override
+    public String toString() {
+        return "Infestador";
+    }
     
 }
 

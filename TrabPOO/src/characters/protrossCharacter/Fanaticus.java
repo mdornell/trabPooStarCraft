@@ -32,6 +32,11 @@ public class Fanaticus extends Protoss{
         }
     }
 
+    @Override
+    public String toString() {
+        return "Fanaticus";
+    }
+
 }
 
 /*

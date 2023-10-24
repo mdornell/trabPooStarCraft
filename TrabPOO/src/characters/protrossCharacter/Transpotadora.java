@@ -30,6 +30,11 @@ public class Transpotadora extends Protoss {
         }
     }
     
+    @Override
+    public String toString() {
+        return "Transportadora";
+    }
+
 }
 
 /*

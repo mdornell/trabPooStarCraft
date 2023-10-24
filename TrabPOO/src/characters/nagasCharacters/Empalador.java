@@ -23,4 +23,9 @@ public class Empalador extends Nagas{
         }
     }
     
+    @Override
+    public String toString() {
+        return "Empalador";
+    }
+
 }

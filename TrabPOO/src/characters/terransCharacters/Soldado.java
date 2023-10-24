@@ -27,6 +27,10 @@ public class Soldado extends Terrans {
         lado2.get(0).sofrerDano(dano);
     }
     
+    @Override
+    public String toString() {
+        return "Soldado";
+    }
     
 }
 

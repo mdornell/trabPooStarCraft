@@ -22,6 +22,11 @@ public class Ambunave extends Terrans{
             }
         }
     }
+
+    @Override
+    public String toString() {
+        return "Ambunave";
+    }
     
 }
 

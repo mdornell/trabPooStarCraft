@@ -18,6 +18,11 @@ public class Zergnideo extends Zergs{
         int dano = 5;
         lado1.get(0).sofrerDano(dano);
     }
+
+    @Override
+    public String toString() {
+        return "Zergnideo";
+    }
     
 }
 

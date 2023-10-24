@@ -39,6 +39,11 @@ public class LordDasCastas extends Zergs{
             lista.add(1, novoZerg);
         }
     }
+
+    @Override
+    public String toString() {
+        return "Lord das Castas";
+    }
     
 }
 

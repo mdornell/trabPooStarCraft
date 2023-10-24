@@ -25,6 +25,11 @@ public class Servo extends Nagas {
             natureza.envenenar();
         }
     }
+
+    @Override
+    public String toString() {
+        return "Servo";
+    }
     
 }
 

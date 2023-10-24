@@ -20,6 +20,11 @@ public class TatuBomba extends Zergs{
 
         lado2.remove(0);
     }
+
+    @Override
+    public String toString() {
+        return "Tatu Bomba";
+    }
     
 }
 

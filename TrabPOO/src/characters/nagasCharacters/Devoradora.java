@@ -21,6 +21,11 @@ public class Devoradora extends Nagas{
         
     }
 
+    @Override
+    public String toString() {
+        return "Devoradora";
+    }
+
 }
 
 /*

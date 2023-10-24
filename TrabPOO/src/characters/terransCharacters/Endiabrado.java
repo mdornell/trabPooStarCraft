@@ -20,6 +20,10 @@ public class Endiabrado extends Terrans {
         lado2.get(2).sofrerDano(dano-10);
     }
 
+    @Override
+    public String toString() {
+        return "Endiabrado";
+    }
 }
 
 /*
