@@ -18,7 +18,7 @@ public class BattlefieldMarco {
             moverGuerreiroDaFilaEVerificar(guerreiro1,lado1);
             moverGuerreiroDaFilaEVerificar(guerreiro2,lado2);          
         } 
-        //verificarVencedor(lado1,lado2);
+        verificarVencedor(lado1,lado2);
     }    
 
     private void verQuemAtacaPrimeiro(int ordemDeAtaque, Guerreiro guerreiro1, Guerreiro guerreiro2, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
@@ -47,37 +47,36 @@ public class BattlefieldMarco {
         fila.remove(guerreiro);
         if(guerreiro.getEnergia() > 0){
             fila.add(guerreiro);
-            
         }
-//        if(fila.isEmpty()){
-//            System.out.println("ULTIMO GUERREIO MORTO: DADOS");
-//            System.out.println();
-//            System.out.println("NOME: "+guerreiro.getNome());
-//            System.out.println("IDADE: "+guerreiro.getIdade());
-//            System.out.println("PESO: "+guerreiro.getPeso());
-//            System.out.println();
-//        }
+        if(fila.isEmpty()){
+            System.out.println("ULTIMO GUERREIO MORTO: DADOS");
+            System.out.println();
+            System.out.println("NOME: "+guerreiro.getNome());
+            System.out.println("IDADE: "+guerreiro.getIdade());
+            System.out.println("PESO: "+guerreiro.getPeso());
+            System.out.println();
+        }
         verificarLista(fila);
     }
     
-    // private void verificarVencedor(LinkedList<Guerreiro> fila1, LinkedList<Guerreiro> fila2){
-    //     if(fila1.isEmpty()){
-    //         System.out.println("Gregos e Nordicos venceram.");
-    //         System.out.println();
-    //         System.out.println("GUERREIO VITORIOSO: DADOS");
-    //         System.out.println("NOME: "+fila1.getLast().getNome());
-    //         System.out.println("IDADE: "+fila1.getLast().getIdade());
-    //         System.out.println("PESO: "+fila1.getLast().getPeso());
-    //     }
-    //     if(fila2.isEmpty()){
-    //         System.out.println("Atlantes e Egipcios venceram.");
-    //         System.out.println();
-    //         System.out.println("GUERREIO VITORIOSO: DADOS");
-    //         System.out.println("NOME: "+fila2.getLast().getNome());
-    //         System.out.println("IDADE: "+fila2.getLast().getIdade());
-    //         System.out.println("PESO: "+fila2.getLast().getPeso()); 
-    //     }
-    // }
+    private void verificarVencedor(LinkedList<Guerreiro> fila1, LinkedList<Guerreiro> fila2){
+        if(!fila1.isEmpty()){
+            System.out.println("Terrans e Protoss venceram.");
+            System.out.println();
+            System.out.println("GUERREIO VITORIOSO: DADOS");
+            System.out.println("NOME: "+fila1.getLast().getNome());
+            System.out.println("IDADE: "+fila1.getLast().getIdade());
+            System.out.println("PESO: "+fila1.getLast().getPeso());
+        }
+        if(!fila2.isEmpty()){
+            System.out.println("Zergs e Nagas venceram.");
+            System.out.println();
+            System.out.println("GUERREIO VITORIOSO: DADOS");
+            System.out.println("NOME: "+fila2.getLast().getNome());
+            System.out.println("IDADE: "+fila2.getLast().getIdade());
+            System.out.println("PESO: "+fila2.getLast().getPeso()); 
+        }
+    }
     
     public double[] somarPeso(LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
         double somas[] = new double[2];
