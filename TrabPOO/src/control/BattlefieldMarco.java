@@ -6,6 +6,21 @@ import characters.abstracts.Guerreiro;
 
 public class BattlefieldMarco {
 
+    public void battle(LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
+        while(!lado1.isEmpty() && !lado2.isEmpty()){
+            int aleatorio = (int)((Math.random() * 50) + 1);
+            
+            Guerreiro guerreiro1 = lado1.get(0);
+            Guerreiro guerreiro2 = lado2.get(0);
+            
+            verQuemAtacaPrimeiro(aleatorio, guerreiro1, guerreiro2, lado1, lado2);
+            
+            moverGuerreiroDaFilaEVerificar(guerreiro1,lado1);
+            moverGuerreiroDaFilaEVerificar(guerreiro2,lado2);          
+        } 
+        verificarVencedor(lado1,lado2);
+    }    
+
     public void infos(LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
         // a) (5 pontos) Determine a soma dos pesos dos lados (isso deve ser feito antes das batalhas):
         double pesos[] = somarPeso(lado1, lado2);
@@ -22,21 +37,6 @@ public class BattlefieldMarco {
 
     }
     
-    public void battle(LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
-        while(!lado1.isEmpty() && !lado2.isEmpty()){
-            int aleatorio = (int)((Math.random() * 50) + 1);
-            
-            Guerreiro guerreiro1 = lado1.get(0);
-            Guerreiro guerreiro2 = lado2.get(0);
-            
-            verQuemAtacaPrimeiro(aleatorio, guerreiro1, guerreiro2, lado1, lado2);
-            
-            moverGuerreiroDaFilaEVerificar(guerreiro1,lado1);
-            moverGuerreiroDaFilaEVerificar(guerreiro2,lado2);          
-        } 
-        verificarVencedor(lado1,lado2);
-    }    
-
     private void verQuemAtacaPrimeiro(int ordemDeAtaque, Guerreiro guerreiro1, Guerreiro guerreiro2, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
         // Verifica se o número aleatório gerado (num) é menor que 25
         if(ordemDeAtaque < 25){
