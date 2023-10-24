@@ -60,24 +60,24 @@ public class BattlefieldMarco {
         verificarLista(fila);
     }
     
-    private void verificarVencedor(LinkedList<Guerreiro> fila1, LinkedList<Guerreiro> fila2){
-        if(fila1.isEmpty()){
-            System.out.println("Gregos e Nordicos venceram.");
-            System.out.println();
-            System.out.println("GUERREIO VITORIOSO: DADOS");
-            System.out.println("NOME: "+fila1.getLast().getNome());
-            System.out.println("IDADE: "+fila1.getLast().getIdade());
-            System.out.println("PESO: "+fila1.getLast().getPeso());
-        }
-        if(fila2.isEmpty()){
-            System.out.println("Atlantes e Egipcios venceram.");
-            System.out.println();
-            System.out.println("GUERREIO VITORIOSO: DADOS");
-            System.out.println("NOME: "+fila2.getLast().getNome());
-            System.out.println("IDADE: "+fila2.getLast().getIdade());
-            System.out.println("PESO: "+fila2.getLast().getPeso()); 
-        }
-    }
+    // private void verificarVencedor(LinkedList<Guerreiro> fila1, LinkedList<Guerreiro> fila2){
+    //     if(fila1.isEmpty()){
+    //         System.out.println("Gregos e Nordicos venceram.");
+    //         System.out.println();
+    //         System.out.println("GUERREIO VITORIOSO: DADOS");
+    //         System.out.println("NOME: "+fila1.getLast().getNome());
+    //         System.out.println("IDADE: "+fila1.getLast().getIdade());
+    //         System.out.println("PESO: "+fila1.getLast().getPeso());
+    //     }
+    //     if(fila2.isEmpty()){
+    //         System.out.println("Atlantes e Egipcios venceram.");
+    //         System.out.println();
+    //         System.out.println("GUERREIO VITORIOSO: DADOS");
+    //         System.out.println("NOME: "+fila2.getLast().getNome());
+    //         System.out.println("IDADE: "+fila2.getLast().getIdade());
+    //         System.out.println("PESO: "+fila2.getLast().getPeso()); 
+    //     }
+    // }
     
     public double[] somarPeso(LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
         double somas[] = new double[2];
