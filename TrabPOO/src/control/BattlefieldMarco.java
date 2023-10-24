@@ -7,6 +7,8 @@ import characters.abstracts.Guerreiro;
 public class BattlefieldMarco {
 
     public void battle(LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
+        infos(lado1, lado2);
+
         while(!lado1.isEmpty() && !lado2.isEmpty()){
             int aleatorio = (int)((Math.random() * 50) + 1);
             
