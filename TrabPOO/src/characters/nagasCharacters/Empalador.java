@@ -18,7 +18,13 @@ public class Empalador extends Nagas{
         int dano = 50;
         lado1.get(0).sofrerDano(dano);
         if(getEnergia() <= 100){
-            lado2.remove(1);
+            regenerarse(lado2);
+        }
+    }
+
+    private void regenerarse(LinkedList<Guerreiro> List){
+        if(List.size() > 1){
+            List.remove(1);
             this.setEnergia(400);
         }
     }
