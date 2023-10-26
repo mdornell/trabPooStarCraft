@@ -1,10 +1,10 @@
-package characters.protrossCharacter;
+package domain.protrossCharacter;
 
 import java.util.LinkedList;
 
-import characters.abstracts.Guerreiro;
-import characters.abstracts.Protoss;
-import characters.nature.Natureza;
+import domain.abstracts.Guerreiro;
+import domain.abstracts.Protoss;
+import domain.nature.Natureza;
 
 public class CloneTormento extends Protoss {
 

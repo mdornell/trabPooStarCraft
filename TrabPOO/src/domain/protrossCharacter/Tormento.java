@@ -9,10 +9,6 @@ import domain.nature.*;
 public class Tormento extends Protoss{
 
     private int initialLife;
-<<<<<<< HEAD:TrabPOO/src/characters/protrossCharacter/Tormento.java
-=======
-    private final int clone;
->>>>>>> 683dfbfe69cbfcf5716c4a6db73239c7386c7513:TrabPOO/src/domain/protrossCharacter/Tormento.java
 
     public Tormento(String nome, int idade, double peso, Natureza type) {
         super(nome, idade, peso, type);
