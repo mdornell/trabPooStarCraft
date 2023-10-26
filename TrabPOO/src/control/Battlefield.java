@@ -1,7 +1,7 @@
 package control; // Declaração do pacote onde este arquivo Java está localizado.
 import java.lang.Math; // Importa a classe Math do pacote java.lang para operações matemáticas.
 import java.util.LinkedList; // Importa a classe LinkedList do pacote java.util para uso de listas encadeadas.
-import characters.abstracts.Guerreiro; // Importa a classe abstrata Guerreiro de um pacote não especificado.
+import domain.abstracts.Guerreiro; // Importa a classe abstrata Guerreiro de um pacote não especificado.
 
 public class Battlefield {
 

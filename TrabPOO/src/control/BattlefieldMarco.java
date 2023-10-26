@@ -2,7 +2,7 @@ package control;
 
 import java.util.LinkedList;
 
-import characters.abstracts.Guerreiro;
+import domain.abstracts.Guerreiro;
 
 public class BattlefieldMarco {
 
