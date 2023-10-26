@@ -2,8 +2,8 @@ package control;
 
 import java.util.LinkedList;
 
-import characters.abstracts.Guerreiro;
-import file.FileManipulation;
+import domain.abstracts.Guerreiro;
+import dao.FileManipulation;
 
 public class Main {
     public static void main(String[] args) {
