@@ -1,7 +1,6 @@
 package control;
 
 import java.util.LinkedList;
-
 import domain.abstracts.Guerreiro;
 
 public class BattlefieldMarco {
@@ -92,6 +91,8 @@ public class BattlefieldMarco {
             System.out.println("NOME: "+fila2.getLast().getNome());
             System.out.println("IDADE: "+fila2.getLast().getIdade());
             System.out.println("PESO: "+fila2.getLast().getPeso()); 
+        }else{
+            System.out.println("Empate");
         }
     }
     
