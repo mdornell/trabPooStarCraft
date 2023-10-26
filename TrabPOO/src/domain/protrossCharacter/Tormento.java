@@ -4,7 +4,8 @@ import java.util.LinkedList;
 
 import domain.abstracts.Guerreiro;
 import domain.abstracts.Protoss;
-import domain.nature.*;
+import domain.nature.Machanic;
+import domain.nature.Natureza;
 
 public class Tormento extends Protoss{
 
