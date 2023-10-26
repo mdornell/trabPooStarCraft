@@ -31,11 +31,7 @@ public class Ambunave extends Terrans{
 }
 
 /*
- * Cruzador de Batalha: unidade Terrana mais poderosa e “nasce” com 1000 pontos
- * de energia (é a única unidade Terrana que não “nasce” com 100 pontos de
- * energia). Possui um feixe de energia concentrada que automaticamente elimina o
- * adversário, independente se sua energia. Como precisa concentrar energia utiliza
- * esse feixe depois de fazer dois ataques comuns (que retiram 50 pontos de
- * energia). Após um ataque de feixe precisa fazer novamente dois ataques comuns
- * para fazer um novo ataque de feixe.
+ * Ambunave: não possui ataque, ou seja, não consegue ferir unidades adversárias.
+ * Na sua vez de atacar passa pela fila aliada recuperando até 50 pontos de energia
+ * das unidades não mecânicas (Soldado, Fanaticus e Tormento).
  */
