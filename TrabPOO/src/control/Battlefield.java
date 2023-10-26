@@ -3,7 +3,7 @@ package control;
 import java.util.LinkedList;
 import domain.abstracts.Guerreiro;
 
-public class BattlefieldMarco {
+public class Battlefield {
 
     public void battle(LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2){
         infos(lado1, lado2);

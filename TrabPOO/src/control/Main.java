@@ -16,7 +16,7 @@ public class Main {
         fileMain.lerDados1(champion, LadoTerransProttoss);
         fileMain.lerDados2(champion, LadoZergsNagas); 
 
-        BattlefieldMarco batalha = new BattlefieldMarco();
+        Battlefield batalha = new Battlefield();
         batalha.battle(LadoTerransProttoss, LadoZergsNagas);
         
         
