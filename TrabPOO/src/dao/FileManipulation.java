@@ -1,28 +1,15 @@
 package dao;
 
-import domain.nagasCharacters.Empalador;
-import domain.nature.Machanic;
-import domain.terransCharacters.CruzadorDeBatalha;
-import domain.nature.Organic;
-import domain.zergsCharacters.Zergnideo;
-import domain.zergsCharacters.Infestador;
-import domain.nagasCharacters.Servo;
-import domain.protrossCharacter.Tormento;
-import domain.zergsCharacters.TatuBomba;
-import domain.nagasCharacters.Devoradora;
-import domain.zergsCharacters.LordDasCastas;
-import domain.protrossCharacter.Transpotadora;
-import domain.protrossCharacter.Fanaticus;
-import domain.terransCharacters.Endiabrado;
-import domain.terransCharacters.Ambunave;
-import domain.terransCharacters.Soldado;
-import domain.protrossCharacter.Colosso;
+import domain.abstracts.Guerreiro;
+import domain.terransCharacters.*;
+import domain.protrossCharacter.*;
+import domain.zergsCharacters.*;
+import domain.nagasCharacters.*;
+import domain.nature.*;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.LinkedList;
 import java.util.Scanner;
-
-import domain.abstracts.Guerreiro;
 
 public class FileManipulation {
     
