@@ -21,5 +21,4 @@ public class CloneTormento extends Protoss {
     public String toString() {
         return "Clone Tormento";
     }
-    
 }
