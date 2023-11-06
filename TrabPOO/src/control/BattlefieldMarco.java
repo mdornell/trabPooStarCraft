@@ -335,12 +335,12 @@ public class BattlefieldMarco {
         int i;
 
         if ((!fila1.isEmpty() && (!fila2.isEmpty()))) {
-            for (i = 0; i < fila1.size(); i++) {
+            for (i = 0; i < tamVet1; i++) {
                 if (fila1.get(i) instanceof Servo) {
                     idex[i] = true;
                 }
             }
-            for (int j = 0; j < fila2.size(); j++) {
+            for (int j = 0; j < tamVet2; j++) {
                 if (fila2.get(j) instanceof Ambunave) {
                     idex[i] = true;
                     i++;
