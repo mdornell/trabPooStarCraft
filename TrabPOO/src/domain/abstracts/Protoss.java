@@ -4,8 +4,6 @@ import domain.nature.Natureza;
 
 public abstract class Protoss extends Guerreiro{
 
-    private int initialLife;
-
     public Protoss(String nome, int idade, double peso, Natureza type) {
         super(nome, idade, peso, type);
     }
@@ -15,13 +13,6 @@ public abstract class Protoss extends Guerreiro{
         protoss.regenerat(regereracao);
     }
 
-    public int getInitialLife() {
-        return initialLife;
-    }
-
-    protected void setInitialLife(int initialLife) {
-        this.initialLife = initialLife;
-    }
 }
 
 /*

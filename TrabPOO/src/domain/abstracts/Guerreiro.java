@@ -1,7 +1,6 @@
 package domain.abstracts;
 
 import java.util.LinkedList;
-
 import domain.nature.Natureza;
 
 public abstract class Guerreiro {

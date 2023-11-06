@@ -42,12 +42,10 @@ public class Tormento extends Protoss{
         lista.addFirst(clone);
     }
 
-
     @Override
     public String toString() {
         return "Tormento";
     }
-    
 }
 
 /*
