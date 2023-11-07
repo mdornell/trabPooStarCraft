@@ -9,11 +9,8 @@ import domain.nature.Natureza;
 
 public class Tormento extends Protoss{
 
-    private int initialLife;
-
     public Tormento(String nome, int idade, double peso, Natureza type) {
         super(nome, idade, peso, type);
-        this.initialLife = 100;
     }
 
     @Override
@@ -23,8 +20,8 @@ public class Tormento extends Protoss{
         int dano = 20;
         lado2.get(0).sofrerDano(dano);
 
-        if(getEnergia() < (initialLife/2)){
-            recuperaçãoGelada(atacante);
+        if(getEnergia() < (getEnenergiaMaxima()/2)){
+            recuperaçãoGelada(champion);
         }
 
         if(order){
@@ -37,8 +34,6 @@ public class Tormento extends Protoss{
         lista.addLast(champion);
 
         Guerreiro clone = new CloneTormento(getNome(), getIdade(), getPeso(),new Machanic());
-        this.setEnergia(50);
-        this.initialLife = 50;
         lista.addFirst(clone);
     }
 

@@ -22,7 +22,7 @@ public class Colosso extends Protoss{
             Individuo.sofrerDano(dano);
         }
 
-        if(getEnergia() < (initialLife/2)){
+        if(getEnergia() < (getEnenergiaMaxima()/2)){
             recuperaçãoGelada(champion);
         }
     }
