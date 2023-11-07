@@ -13,7 +13,6 @@ public class Transpotadora extends Protoss {
     public Transpotadora(String nome, int idade, double peso, Natureza type) {
         super(nome, idade, peso, type);
         this.setEnergia(500);
-        this.setInitialLife(getEnergia());
         this.intecepitadores = 0;
     }
 
@@ -25,7 +24,7 @@ public class Transpotadora extends Protoss {
         }
         lado2.get(0).sofrerDano(dano * intecepitadores);
         
-        if(getEnergia() < (getInitialLife()/2)){
+        if(getEnergia() < (getEnenergiaMaxima()/2)){
             recuperaçãoGelada(champion);
         }
     }
