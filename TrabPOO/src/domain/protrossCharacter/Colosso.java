@@ -8,11 +8,8 @@ import domain.nature.Natureza;
 
 public class Colosso extends Protoss{
 
-    private int initialLife;
-
     public Colosso(String nome, int idade, double peso, Natureza type) {
         super(nome, idade, peso, type);
-        this.initialLife = 100;
     }
 
     @Override
