@@ -18,11 +18,6 @@ public class Main {
 
         Battlefield batalha = new Battlefield(); // Cria uma instância da classe Battlefield para simular a batalha.
         batalha.battle(LadoTerransProttoss, LadoZergsNagas); // Inicia a simulação da batalha entre os dois grupos de guerreiros.
-        
-        // System.out.println("Lado: Terrans e Protoss");
-        // imprimirDados(LadoTerransProttoss);
-        // System.out.println("\n\nLado: Zergs e Nagas");
-        // imprimirDados(LadoZergsNagas);
     }
     
     public static void imprimirDados(LinkedList<Guerreiro> Lado){
