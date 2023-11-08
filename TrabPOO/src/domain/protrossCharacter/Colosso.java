@@ -19,6 +19,15 @@ public class Colosso extends Protoss{
             Individuo.sofrerDano(dano);
         }
 
+        int sizeList = lado2.size();
+        for(int i = 0;i < sizeList;i++){
+            if(lado2.get(i).getEnergia() < 0){
+                lado2.remove(i);
+                sizeList = lado2.size();
+                i = 0;
+            }
+        }
+
         if(getEnergia() < (getEnenergiaMaxima()/2)){
             recuperaçãoGelada(champion);
         }

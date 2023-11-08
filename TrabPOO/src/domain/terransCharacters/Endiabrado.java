@@ -15,9 +15,16 @@ public class Endiabrado extends Terrans {
     @Override
     public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2, boolean order){
         int dano = 15;
-        lado2.get(0).sofrerDano(dano);
-        lado2.get(1).sofrerDano(dano-5);
-        lado2.get(2).sofrerDano(dano-10);
+        this.gerarDano(lado2, 0, dano);
+        this.gerarDano(lado2, 1, dano-5);
+        this.gerarDano(lado2, 2, dano-10);
+    }
+
+    private void gerarDano(LinkedList<Guerreiro> fila, int indice, int dano){
+        int ind = fila.size();
+        if(ind > indice){
+            fila.get(indice).sofrerDano(dano);
+        }
     }
 
     @Override
