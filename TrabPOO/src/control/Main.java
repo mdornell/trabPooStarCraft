@@ -19,7 +19,6 @@ public class Main {
         Battlefield batalha = new Battlefield();
         batalha.battle(LadoTerransProttoss, LadoZergsNagas);
         
-        
         // System.out.println("Lado: Terrans e Protoss");
         // imprimirDados(LadoTerransProttoss);
         // System.out.println("\n\nLado: Zergs e Nagas");

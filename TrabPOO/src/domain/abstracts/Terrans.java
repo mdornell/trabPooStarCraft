@@ -7,6 +7,8 @@ public abstract class Terrans extends Guerreiro{
     public Terrans(String nome, int idade, double peso, Natureza type) {
         super(nome, idade, peso, type);
     }   
+
+    
 }
 
 /*

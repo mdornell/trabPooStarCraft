@@ -25,10 +25,10 @@ public class Ambunave extends Terrans{
             }
         }else{
             for (Guerreiro Individuo : lado2){
-            if(Individuo.getType() instanceof Organic){
-                Individuo.regenerat(remedio);
+                if(Individuo.getType() instanceof Organic){
+                    Individuo.regenerat(remedio);
+                }
             }
-        }
         }
     }
 

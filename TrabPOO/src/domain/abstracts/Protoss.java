@@ -12,7 +12,6 @@ public abstract class Protoss extends Guerreiro{
         int regereracao = (int) ((protoss.getEnergia())*0.05);
         protoss.regenerat(regereracao);
     }
-
 }
 
 /*

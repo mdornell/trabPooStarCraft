@@ -69,7 +69,8 @@ public abstract class Guerreiro {
         return " ";
     }
 
-    // public abstract void verificaSeMorreu(Guerreiro guerreiro, LinkedList<Guerreiro> fila);;
+    
+
     public abstract void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2, boolean order);  
     
 }

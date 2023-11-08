@@ -15,7 +15,7 @@ public class CloneTormento extends Protoss {
 
     @Override
     public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2, boolean order) {
-        
+        return;
     }
 
     @Override
