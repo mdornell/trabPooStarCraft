@@ -1,39 +1,3 @@
-// package domain.terransCharacters;
-
-// import java.util.LinkedList;
-
-// import domain.abstracts.Guerreiro;
-// import domain.abstracts.Terrans;
-// import domain.nature.Natureza;
-
-// public class CruzadorDeBatalha extends Terrans{
-
-//     private int ataqueFinal = 0;
-
-//     public CruzadorDeBatalha(String nome, int idade, double peso, Natureza type) {
-//         super(nome, idade, peso, type);
-//         this.setEnergia(1000);
-//     }
-
-//     @Override
-//     public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2, boolean order){
-//         int dano = 50;
-//         if(ataqueFinal == 3){
-//             int life = lado2.get(0).getEnergia();
-//             lado2.get(0).sofrerDano(life);;
-//             this.ataqueFinal = 0;
-//         }else{
-//             lado2.get(0).sofrerDano(dano);
-//             this.ataqueFinal += 1;
-//         }
-//     }   
-
-//     @Override
-//     public String toString() {
-//         return "Cruzador de Batalha";
-//     }
-// }
-
 package domain.terransCharacters;
 
 import java.util.LinkedList;

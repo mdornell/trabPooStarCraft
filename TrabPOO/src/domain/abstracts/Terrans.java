@@ -1,15 +1,3 @@
-// package domain.abstracts;
-
-// import domain.nature.Natureza;
-
-// public abstract class Terrans extends Guerreiro{
-
-//     public Terrans(String nome, int idade, double peso, Natureza type) {
-//         super(nome, idade, peso, type);
-//     }   
-// }
-
-
 package domain.abstracts;
 
 import domain.nature.Natureza;

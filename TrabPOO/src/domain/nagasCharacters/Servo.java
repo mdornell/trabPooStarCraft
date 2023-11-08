@@ -1,38 +1,3 @@
-// package domain.nagasCharacters;
-
-// import java.util.LinkedList;
-
-// import domain.abstracts.Guerreiro;
-// import domain.abstracts.Nagas;
-// import domain.nature.Natureza;
-// import domain.nature.Organic;
-
-// public class Servo extends Nagas {
-
-//     public Servo(String nome, int idade, double peso, Natureza type) {
-//         super(nome, idade, peso, type);
-//     }
-
-
-//     @Override
-//     public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2, boolean order){
-//         invenenar(lado1.get(0), lado2);
-//     }
-
-//     public void invenenar(Guerreiro individuo,LinkedList<Guerreiro> LadoTp){
-//         if(individuo.getType() instanceof Organic){
-//             Organic natureza = (Organic) individuo.getType();
-//             natureza.envenenar();
-//         }
-//     }
-
-//     @Override
-//     public String toString() {
-//         return "Servo";
-//     }
-    
-// }
-
 package domain.nagasCharacters;
 
 import java.util.LinkedList;
