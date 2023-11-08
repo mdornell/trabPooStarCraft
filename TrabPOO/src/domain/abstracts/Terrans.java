@@ -1,15 +1,28 @@
+// package domain.abstracts;
+
+// import domain.nature.Natureza;
+
+// public abstract class Terrans extends Guerreiro{
+
+//     public Terrans(String nome, int idade, double peso, Natureza type) {
+//         super(nome, idade, peso, type);
+//     }   
+// }
+
+
 package domain.abstracts;
 
 import domain.nature.Natureza;
 
-public abstract class Terrans extends Guerreiro{
+// Declaração da classe abstrata Terrans, que estende a classe Guerreiro
+public abstract class Terrans extends Guerreiro {
 
+    // Construtor da classe Terrans que chama o construtor da classe Guerreiro com os parâmetros fornecidos
     public Terrans(String nome, int idade, double peso, Natureza type) {
-        super(nome, idade, peso, type);
-    }   
-
-    
+        super(nome, idade, peso, type); // Chama o construtor da classe Guerreiro
+    }
 }
+
 
 /*
  * Terranos não estrapolam seu limite de energia, ou seja, se uma Ambunave recupera

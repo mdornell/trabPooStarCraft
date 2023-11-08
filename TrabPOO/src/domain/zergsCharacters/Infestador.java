@@ -1,3 +1,41 @@
+// package domain.zergsCharacters;
+
+// import java.util.LinkedList;
+
+// import domain.abstracts.Guerreiro;
+// import domain.abstracts.Zergs;
+// import domain.nature.Natureza;
+// import domain.nature.Organic;
+// public class Infestador extends Zergs{
+
+//     public Infestador(String nome, int idade, double peso, Natureza type) {
+//         super(nome, idade, peso, type);
+//     }
+
+//     @Override
+//     public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2, boolean order){
+
+//         if(order){
+//             Guerreiro controlado = lado1.get(0);
+//             controlado.atacar(controlado, lado2, lado1, false);
+//         }else{
+//             createZerg(lado2);
+//         }
+//     }
+
+//     private void createZerg(LinkedList<Guerreiro> lista){
+//         Guerreiro novoZerg = new Zergnideo(getNome(), getIdade(), getPeso(),new Organic());
+//         lista.add(1, novoZerg);
+
+//     }
+
+//     @Override
+//     public String toString() {
+//         return "Infestador";
+//     }
+    
+// }
+
 package domain.zergsCharacters;
 
 import java.util.LinkedList;
@@ -6,35 +44,39 @@ import domain.abstracts.Guerreiro;
 import domain.abstracts.Zergs;
 import domain.nature.Natureza;
 import domain.nature.Organic;
-public class Infestador extends Zergs{
 
+// Declaração da classe Infestador que é uma subclasse de Zergs
+public class Infestador extends Zergs {
+
+    // Construtor da classe Infestador que chama o construtor da classe Zergs com os parâmetros fornecidos
     public Infestador(String nome, int idade, double peso, Natureza type) {
-        super(nome, idade, peso, type);
+        super(nome, idade, peso, type); // Chama o construtor da classe Zergs
     }
 
+    // Método implementado para atacar outros guerreiros
     @Override
-    public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2, boolean order){
-
-        if(order){
+    public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2, boolean order) {
+        if (order) {
             Guerreiro controlado = lado1.get(0);
             controlado.atacar(controlado, lado2, lado1, false);
-        }else{
+        } else {
             createZerg(lado2);
         }
     }
 
-    private void createZerg(LinkedList<Guerreiro> lista){
-        Guerreiro novoZerg = new Zergnideo(getNome(), getIdade(), getPeso(),new Organic());
-        lista.add(1, novoZerg);
-
+    // Método privado para criar um novo Zerg e adicioná-lo à lista de guerreiros
+    private void createZerg(LinkedList<Guerreiro> lista) {
+        Guerreiro novoZerg = new Zergnideo(getNome(), getIdade(), getPeso(), new Organic());
+        lista.add(1, novoZerg); // Adiciona o novo Zerg à lista de guerreiros no índice 1
     }
 
+    // Sobrescrita do método toString para retornar uma representação em string do Infestador
     @Override
     public String toString() {
         return "Infestador";
     }
-    
 }
+
 
 /*
  * Infestador: não possui ataque. Se for o primeiro a atacar, controla o adversário e

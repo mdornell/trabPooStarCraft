@@ -1,3 +1,45 @@
+// package domain.protrossCharacter;
+
+// import java.util.LinkedList;
+
+// import domain.abstracts.Guerreiro;
+// import domain.abstracts.Protoss;
+// import domain.nature.Natureza;
+
+// public class Colosso extends Protoss{
+
+//     public Colosso(String nome, int idade, double peso, Natureza type) {
+//         super(nome, idade, peso, type);
+//     }
+
+//     @Override
+//     public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2, boolean order){
+//         int dano = 20;
+//         for (Guerreiro Individuo : lado2){
+//             Individuo.sofrerDano(dano);
+//         }
+
+//         int sizeList = lado2.size();
+//         for(int i = 0;i < sizeList;i++){
+//             if(lado2.get(i).getEnergia() < 0){
+//                 lado2.remove(i);
+//                 sizeList = lado2.size();
+//                 i = 0;
+//             }
+//         }
+
+//         if(getEnergia() < (getEnenergiaMaxima()/2)){
+//             recuperaçãoGelada(champion);
+//         }
+//     }
+
+//     @Override
+//     public String toString() {
+//         return "Colosso";
+//     }
+// }
+
+
 package domain.protrossCharacter;
 
 import java.util.LinkedList;
@@ -6,33 +48,40 @@ import domain.abstracts.Guerreiro;
 import domain.abstracts.Protoss;
 import domain.nature.Natureza;
 
-public class Colosso extends Protoss{
+// Declaração da classe Colosso que é uma subclasse de Protoss
+public class Colosso extends Protoss {
 
+    // Construtor da classe Colosso que chama o construtor da classe Protoss com os parâmetros fornecidos
     public Colosso(String nome, int idade, double peso, Natureza type) {
-        super(nome, idade, peso, type);
+        super(nome, idade, peso, type); // Chama o construtor da classe Protoss
     }
 
+    // Método implementado para atacar outros guerreiros
     @Override
-    public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2, boolean order){
+    public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2, boolean order) {
         int dano = 20;
-        for (Guerreiro Individuo : lado2){
-            Individuo.sofrerDano(dano);
+        // Causa dano a todos os guerreiros do lado2
+        for (Guerreiro individuo : lado2) {
+            individuo.sofrerDano(dano);
         }
 
         int sizeList = lado2.size();
-        for(int i = 0;i < sizeList;i++){
-            if(lado2.get(i).getEnergia() < 0){
+        // Verifica se algum guerreiro no lado2 tem energia negativa e remove-os da lista
+        for (int i = 0; i < sizeList; i++) {
+            if (lado2.get(i).getEnergia() < 0) {
                 lado2.remove(i);
                 sizeList = lado2.size();
                 i = 0;
             }
         }
 
-        if(getEnergia() < (getEnenergiaMaxima()/2)){
+        // Verifica se a energia do Colosso está abaixo de metade da energia máxima e ativa a recuperação gelada
+        if (getEnergia() < (getEnergiaMaxima() / 2)) {
             recuperaçãoGelada(champion);
         }
     }
 
+    // Sobrescrita do método toString para retornar uma representação em string do Colosso
     @Override
     public String toString() {
         return "Colosso";
