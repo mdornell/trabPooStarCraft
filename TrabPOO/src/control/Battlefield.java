@@ -3,6 +3,7 @@ package control;
 import java.util.LinkedList;
 import domain.abstracts.Guerreiro;
 import domain.nagasCharacters.Servo;
+import domain.nature.Organic;
 import domain.terransCharacters.Ambunave;
 
 public class Battlefield {
@@ -82,6 +83,11 @@ public class Battlefield {
 
         if (guerreiroAtacante.getEnergia() > 0) {
             guerreiroAtacante.atacar(guerreiroSofredor, lado1, lado2, order);
+            
+            if(guerreiroAtacante.getType() instanceof Organic){
+                Organic natureza = (Organic) guerreiroAtacante.getType();
+                guerreiroAtacante.sofrerDano(natureza.getBrotoVeneno());
+            }
         }
         return codigo;
     }

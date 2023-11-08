@@ -1,3 +1,3 @@
-3	Ren-rob	36	97,22
+1	Ren-rob	36	97,22
 1	Da	43	22,44
-5	Menmen	18	13,39
+1	Menmen	18	13,39
