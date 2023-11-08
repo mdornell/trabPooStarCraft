@@ -10,15 +10,17 @@ import domain.nature.Organic;
 
 public class LordDasCastas extends Zergs{
 
+    private Random random;
+
     public LordDasCastas(String nome, int idade, double peso, Natureza type) {
         super(nome, idade, peso, type);
         this.setEnergia(200);
+        this.random = new Random();
     }
 
     @Override
     public void atacar(Guerreiro champion, LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2, boolean order){
-        Random random = new Random();
-        int type = random.nextInt(2);
+        int type = this.random.nextInt(2);
         createZerg(type, lado2);
     }
     
