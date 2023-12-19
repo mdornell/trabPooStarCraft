@@ -40,6 +40,7 @@ public class MainWindow extends javax.swing.JFrame {
         btnInfos = new javax.swing.JButton();
         btnSair = new javax.swing.JButton();
         lblTitle = new javax.swing.JLabel();
+        lblBackground = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(800, 500));
@@ -88,6 +89,10 @@ public class MainWindow extends javax.swing.JFrame {
         getContentPane().add(lblTitle);
         lblTitle.setBounds(305, 33, 220, 48);
 
+        lblBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/HomePage.jpg"))); // NOI18N
+        getContentPane().add(lblBackground);
+        lblBackground.setBounds(0, 0, 830, 490);
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -119,6 +124,7 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JButton btnJogar;
     private javax.swing.JButton btnListas;
     private javax.swing.JButton btnSair;
+    private javax.swing.JLabel lblBackground;
     private javax.swing.JLabel lblTitle;
     // End of variables declaration//GEN-END:variables
 }
