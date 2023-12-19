@@ -4,6 +4,7 @@ import java.util.LinkedList;
 
 import domain.abstracts.Guerreiro;
 import dao.FileManipulation;
+import windows.MainWindow;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,7 +18,10 @@ public class Main {
         fileMain.lerDados2(champion, LadoZergsNagas);  // Lê os dados do segundo grupo de guerreiros e armazena na lista LadoZergsNagas.
 
         Battlefield batalha = new Battlefield(); // Cria uma instância da classe Battlefield para simular a batalha.
-        batalha.battle(LadoTerransProttoss, LadoZergsNagas); // Inicia a simulação da batalha entre os dois grupos de guerreiros.
+        MainWindow jogo = new MainWindow( LadoTerransProttoss,LadoZergsNagas,batalha);
+        jogo.setVisible(true);
+        
+//        batalha.battle(LadoTerransProttoss, LadoZergsNagas); // Inicia a simulação da batalha entre os dois grupos de guerreiros.
     }
     
     public static void imprimirDados(LinkedList<Guerreiro> Lado){

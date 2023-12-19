@@ -54,7 +54,7 @@ public class LordDasCastas extends Zergs {
     // Sobrescrita do método toString para retornar uma representação em string do LordDasCastas
     @Override
     public String toString() {
-        return "Lord das Castas";
+        return "Lord_das_Castas";
     }
 }
 

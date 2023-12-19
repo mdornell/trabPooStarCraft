@@ -24,6 +24,6 @@ public class CloneTormento extends Protoss {
     // Sobrescrita do método toString para retornar uma representação em string do CloneTormento
     @Override
     public String toString() {
-        return "Clone Tormento";
+        return "Clone_Tormento";
     }
 }

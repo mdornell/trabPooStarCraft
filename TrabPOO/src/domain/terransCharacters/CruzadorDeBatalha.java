@@ -36,7 +36,7 @@ public class CruzadorDeBatalha extends Terrans {
     // Sobrescrita do método toString para retornar uma representação em string do CruzadorDeBatalha
     @Override
     public String toString() {
-        return "Cruzador de Batalha";
+        return "Cruzador_de_Batalha";
     }
 }
 

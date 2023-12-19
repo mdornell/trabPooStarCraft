@@ -11,10 +11,10 @@ public class Battlefield {
     // Método para simular a batalha entre dois grupos de guerreiros
     public void battle(LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2) {
         // Exibe informações gerais antes da batalha
-        infos(lado1, lado2);
+//        infos(lado1, lado2);
 
         // Loop da batalha continua enquanto ambos os lados têm guerreiros
-        while (!lado1.isEmpty() && !lado2.isEmpty()) {
+        if (!lado1.isEmpty() && !lado2.isEmpty()) {
             // Gera um número aleatório para determinar a ordem de ataque
             int aleatorio = (int) ((Math.random() * 50) + 1);
 
@@ -32,29 +32,28 @@ public class Battlefield {
 
             if(continuarBatalha(lado1, lado2)){
                 // A batalha continua.
-                break;
             }
         }
         // Verifica o vencedor da batalha e exibe informações sobre o guerreiro
         // vitorioso ou declara um empate
-        verificarVencedor(lado1, lado2);
+//        verificarVencedor(lado1, lado2);
     }
 
     // Método para exibir informações gerais antes da batalha
-    public void infos(LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2) {
-        // a) Calcula a soma dos pesos
-        double pesos[] = somarPeso(lado1, lado2);
-        System.out.println("Pesos das tropas :");
-        System.out.println("Terrans e Protoss pesam : " + pesos[0] + " unidades");
-        System.out.println("Zergs e Nagas pesam : " + pesos[1] + " unidades");
-
-        // b) Encontra o guerreiro mais velho
-        Guerreiro maiorIdade = maisVelho(lado1, lado2);
-        System.out.println("\nO Guerreiro mais velho é :");
-        System.out.println("Nome : " + maiorIdade.getNome());
-        System.out.println("Idade : " + maiorIdade.getIdade());
-        System.out.println("Classe : " + maiorIdade.toString());
-    }
+//    public void infos(LinkedList<Guerreiro> lado1, LinkedList<Guerreiro> lado2) {
+//        // a) Calcula a soma dos pesos
+//        double pesos[] = somarPeso(lado1, lado2);
+//        System.out.println("Pesos das tropas :");
+//        System.out.println("Terrans e Protoss pesam : " + pesos[0] + " unidades");
+//        System.out.println("Zergs e Nagas pesam : " + pesos[1] + " unidades");
+//
+//        // b) Encontra o guerreiro mais velho
+//        Guerreiro maiorIdade = maisVelho(lado1, lado2);
+//        System.out.println("\nO Guerreiro mais velho é :");
+//        System.out.println("Nome : " + maiorIdade.getNome());
+//        System.out.println("Idade : " + maiorIdade.getIdade());
+//        System.out.println("Classe : " + maiorIdade.toString());
+//    }
 
     // Método privado para determinar a ordem de ataque com base no número aleatório
     private void verQuemAtacaPrimeiro(int ordemDeAtaque, Guerreiro guerreiro1, Guerreiro guerreiro2,

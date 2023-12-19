@@ -26,7 +26,7 @@ public class TatuBomba extends Zergs {
     // Sobrescrita do método toString para retornar uma representação em string do TatuBomba
     @Override
     public String toString() {
-        return "Tatu Bomba";
+        return "Tatu_Bomba";
     }
 }
 
