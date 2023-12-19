@@ -53,7 +53,7 @@ public class MainWindow extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnJogar);
-        btnJogar.setBounds(243, 127, 150, 49);
+        btnJogar.setBounds(220, 130, 150, 49);
 
         btnListas.setText("Listas");
         btnListas.addActionListener(new java.awt.event.ActionListener() {
@@ -62,7 +62,7 @@ public class MainWindow extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnListas);
-        btnListas.setBounds(243, 241, 150, 47);
+        btnListas.setBounds(220, 240, 150, 47);
 
         btnInfos.setText("Infos");
         btnInfos.addActionListener(new java.awt.event.ActionListener() {
@@ -71,7 +71,7 @@ public class MainWindow extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnInfos);
-        btnInfos.setBounds(430, 127, 150, 49);
+        btnInfos.setBounds(410, 130, 150, 49);
 
         btnSair.setText("Sair");
         btnSair.addActionListener(new java.awt.event.ActionListener() {
@@ -80,14 +80,14 @@ public class MainWindow extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnSair);
-        btnSair.setBounds(430, 241, 150, 47);
+        btnSair.setBounds(410, 240, 150, 47);
 
         lblTitle.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         lblTitle.setText("StarCraft IFES");
         lblTitle.setToolTipText("");
         lblTitle.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         getContentPane().add(lblTitle);
-        lblTitle.setBounds(305, 33, 220, 48);
+        lblTitle.setBounds(280, 30, 220, 48);
 
         lblBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/HomePage.jpg"))); // NOI18N
         getContentPane().add(lblBackground);

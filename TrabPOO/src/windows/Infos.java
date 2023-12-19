@@ -45,6 +45,7 @@ public class Infos extends javax.swing.JDialog {
         btnVoltar = new javax.swing.JButton();
         txtMaisVelho2 = new javax.swing.JTextField();
         txtMaisVelho3 = new javax.swing.JTextField();
+        lblBackground = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(800, 500));
@@ -53,28 +54,41 @@ public class Infos extends javax.swing.JDialog {
                 formWindowActivated(evt);
             }
         });
+        getContentPane().setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel1.setText("Peso1:");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(34, 47, 263, 25);
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel2.setText("Peso2:");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(34, 182, 263, 25);
 
         txtPeso1.setEditable(false);
         txtPeso1.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         txtPeso1.setBorder(null);
+        getContentPane().add(txtPeso1);
+        txtPeso1.setBounds(34, 90, 283, 32);
 
         txtPeso2.setEditable(false);
         txtPeso2.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         txtPeso2.setBorder(null);
+        getContentPane().add(txtPeso2);
+        txtPeso2.setBounds(34, 213, 283, 32);
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel3.setText("Mais Velho:");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(450, 47, 263, 25);
 
         txtMaisVelho1.setEditable(false);
         txtMaisVelho1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtMaisVelho1.setBorder(null);
         txtMaisVelho1.setPreferredSize(new java.awt.Dimension(100, 30));
+        getContentPane().add(txtMaisVelho1);
+        txtMaisVelho1.setBounds(450, 78, 297, 30);
 
         btnVoltar.setText("Voltar");
         btnVoltar.addActionListener(new java.awt.event.ActionListener() {
@@ -82,67 +96,26 @@ public class Infos extends javax.swing.JDialog {
                 btnVoltarActionPerformed(evt);
             }
         });
+        getContentPane().add(btnVoltar);
+        btnVoltar.setBounds(34, 360, 76, 27);
 
         txtMaisVelho2.setEditable(false);
         txtMaisVelho2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtMaisVelho2.setBorder(null);
         txtMaisVelho2.setPreferredSize(new java.awt.Dimension(100, 30));
+        getContentPane().add(txtMaisVelho2);
+        txtMaisVelho2.setBounds(450, 114, 297, 30);
 
         txtMaisVelho3.setEditable(false);
         txtMaisVelho3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtMaisVelho3.setBorder(null);
         txtMaisVelho3.setPreferredSize(new java.awt.Dimension(100, 30));
+        getContentPane().add(txtMaisVelho3);
+        txtMaisVelho3.setBounds(450, 150, 297, 30);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(34, 34, 34)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnVoltar)
-                        .addContainerGap(714, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 263, Short.MAX_VALUE)
-                                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addComponent(txtPeso2, javax.swing.GroupLayout.DEFAULT_SIZE, 283, Short.MAX_VALUE)
-                            .addComponent(txtPeso1))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtMaisVelho3, javax.swing.GroupLayout.DEFAULT_SIZE, 297, Short.MAX_VALUE)
-                            .addComponent(txtMaisVelho2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(txtMaisVelho1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(77, 77, 77))))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(47, 47, 47)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtMaisVelho1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtMaisVelho2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(18, 18, 18)
-                        .addComponent(txtPeso1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtMaisVelho3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(2, 2, 2)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtPeso2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 115, Short.MAX_VALUE)
-                .addComponent(btnVoltar)
-                .addGap(34, 34, 34))
-        );
+        lblBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/infoPage.jpg"))); // NOI18N
+        getContentPane().add(lblBackground);
+        lblBackground.setBounds(0, 0, 850, 550);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -213,6 +186,7 @@ public class Infos extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel lblBackground;
     private javax.swing.JTextField txtMaisVelho1;
     private javax.swing.JTextField txtMaisVelho2;
     private javax.swing.JTextField txtMaisVelho3;

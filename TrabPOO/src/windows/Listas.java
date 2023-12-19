@@ -72,7 +72,7 @@ public class Listas extends javax.swing.JDialog {
         jScrollPane2.setViewportView(tblGuerreiro1);
 
         getContentPane().add(jScrollPane2);
-        jScrollPane2.setBounds(44, 40, 332, 340);
+        jScrollPane2.setBounds(20, 40, 332, 340);
 
         tblGuerreiro2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 255)));
         tblGuerreiro2.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
@@ -95,7 +95,7 @@ public class Listas extends javax.swing.JDialog {
         jScrollPane3.setViewportView(tblGuerreiro2);
 
         getContentPane().add(jScrollPane3);
-        jScrollPane3.setBounds(471, 40, 320, 340);
+        jScrollPane3.setBounds(450, 40, 320, 340);
 
         btnVoltar.setText("Voltar");
         btnVoltar.addActionListener(new java.awt.event.ActionListener() {
@@ -104,9 +104,11 @@ public class Listas extends javax.swing.JDialog {
             }
         });
         getContentPane().add(btnVoltar);
-        btnVoltar.setBounds(44, 420, 100, 38);
+        btnVoltar.setBounds(20, 420, 100, 38);
+
+        lblBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/listaPage.jpg"))); // NOI18N
         getContentPane().add(lblBackground);
-        lblBackground.setBounds(0, 0, 830, 560);
+        lblBackground.setBounds(0, -70, 880, 630);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
