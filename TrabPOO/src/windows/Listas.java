@@ -40,6 +40,7 @@ public class Listas extends javax.swing.JDialog {
         jScrollPane3 = new javax.swing.JScrollPane();
         tblGuerreiro2 = new javax.swing.JTable();
         btnVoltar = new javax.swing.JButton();
+        lblBackground = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(800, 500));
@@ -48,6 +49,7 @@ public class Listas extends javax.swing.JDialog {
                 formWindowActivated(evt);
             }
         });
+        getContentPane().setLayout(null);
 
         tblGuerreiro1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 255)));
         tblGuerreiro1.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
@@ -69,6 +71,9 @@ public class Listas extends javax.swing.JDialog {
         });
         jScrollPane2.setViewportView(tblGuerreiro1);
 
+        getContentPane().add(jScrollPane2);
+        jScrollPane2.setBounds(44, 40, 332, 340);
+
         tblGuerreiro2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 255)));
         tblGuerreiro2.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
         tblGuerreiro2.setModel(new javax.swing.table.DefaultTableModel(
@@ -89,40 +94,19 @@ public class Listas extends javax.swing.JDialog {
         });
         jScrollPane3.setViewportView(tblGuerreiro2);
 
+        getContentPane().add(jScrollPane3);
+        jScrollPane3.setBounds(471, 40, 320, 340);
+
         btnVoltar.setText("Voltar");
         btnVoltar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnVoltarActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(44, 44, 44)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnVoltar, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 332, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 95, Short.MAX_VALUE)
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(41, 41, 41))))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 40, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 340, Short.MAX_VALUE)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                .addGap(40, 40, 40)
-                .addComponent(btnVoltar, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27))
-        );
+        getContentPane().add(btnVoltar);
+        btnVoltar.setBounds(44, 420, 100, 38);
+        getContentPane().add(lblBackground);
+        lblBackground.setBounds(0, 0, 830, 560);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -192,6 +176,7 @@ public class Listas extends javax.swing.JDialog {
     private javax.swing.JButton btnVoltar;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JLabel lblBackground;
     private javax.swing.JTable tblGuerreiro1;
     private javax.swing.JTable tblGuerreiro2;
     // End of variables declaration//GEN-END:variables
